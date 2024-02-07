@@ -1,0 +1,247 @@
+[23-Jan-2024 03:05:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randEpisodes.php on line 13
+[23-Jan-2024 03:05:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randMovies.php on line 8
+[23-Jan-2024 03:06:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randEpisodes.php on line 13
+[23-Jan-2024 03:06:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randMovies.php on line 8
+[23-Jan-2024 03:06:30 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randEpisodes.php on line 13
+[23-Jan-2024 03:06:30 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randMovies.php on line 8
+[24-Jan-2024 16:21:12 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randEpisodes.php(5): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:21:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randMovies.php(5): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:21:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randEpisodes.php(5): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:21:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:21:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:21:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:21:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:21:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:21:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:21:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randMovies.php(5): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:21:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:21:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:21:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randMovies.php(5): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:21:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:21:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_onlyMovies.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_relatedCast.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:11 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:11 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:11 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randEpisodes.php(5): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_episode.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_onlyMovies.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_relatedCast.php(3): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:24:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randEpisodes.php(5): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:25:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randEpisodes.php(5): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:27:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randEpisodes.php(5): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:27:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randEpisodes.php(5): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:27:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randEpisodes.php(5): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:29:23 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randEpisodes.php(5): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6
+[24-Jan-2024 16:45:56 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randEpisodes.php on line 8
+[29-Jan-2024 23:50:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08004] [1040] Too many connections in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php:6
+Stack trace:
+#0 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php(6): PDO->__construct('mysql:host=loca...', 'zafnoy95_starga...', 'r3s8Zi8YHEB68B*...')
+#1 /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/get_randEpisodes.php(5): require_once('/home/zafnoy95/...')
+#2 {main}
+  thrown in /home/zafnoy95/stargatefannetwork.johnkeenan.ca/services/inc/connect_pdo.php on line 6

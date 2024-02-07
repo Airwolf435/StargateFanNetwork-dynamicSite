@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/foundation.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="./js/vendor/jquery.js" defer></script>
+    <script src="./js/vendor/sammy.js" defer></script>
+    <script src="./js/vendor/what-input.js" defer></script>
+    <script src="./js/vendor/foundation.js" defer></script>
+    <script src="./js/vendor/slick.min.js" defer></script>
+    <script src="./js/app.js" defer></script>
+    <title>Stargate Fan Network | Dynamic Site</title>
+</head>
+<body>
+    <header class="grid-x">
+        <section class="cell medium-6">
+            <a href="#/"><img src="./assets/imgs/logo.svg" alt="SFN Logo and Home Button" id="logo"></a>
+        </section>
+        <nav class="cell medium-6 ">
+            <div class="search-bar">
+                <input type="text" name="search" id="searchText" placeholder="Search...">
+                <img src="./assets/imgs/magGlass.svg" alt="" aria-hidden="true" id="searchImg">
+            </div>
+            <div id="searchResults">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Start of Splash/Home Page -->
+    <main id="splash" class="grid-x">
+        <section id="videoBanner" class="cell small-12 grid-x">
+                <video autoplay muted loop>
+                    <source src="./assets/video/video-banner-1.mp4" type="video/mp4">
+                </video>
+        </section>
+
+        <section id="splashLogo" class="cell small-12">
+                <h1>Stargate Fan Network</h1>
+        </section>
+
+        <div class="body-sect cell small-12">
+            <img src="./assets/imgs/dividercompFinal.png" alt="" aria-hidden="true" class="divider">
+            <section class="grid-x">
+                <h2 class="yellow-text cell small-12 sub-header">Featured Episodes</h2>
+                <div class="super-slider featured-episodes cell small-12 medium-10 medium-offset-1">
+                        
+                </div>
+            </section>
+            <img src="./assets/imgs/dividercompFinal.png" alt="" aria-hidden="true" class="divider">
+            <section class="grid-x">
+                <h2 class="yellow-text cell small-12 sub-header">Featured Movies</h2>
+                <div class="cell small-12 medium-10 medium-offset-1 grid-x featured-movies movie-slider">
+                    
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Start of Episodes Page -->
+    <main id="episodePage" class="grid-x">
+        <div class="cell small-12 large-10 large-offset-1 grid-x grid-margin-x mb">
+            <section class="cell small-12 large-5">
+                <div class="teaser-img">
+                    <img src="./assets/imgs/episodePictures/s2-ep15-edit.jpg" alt="" class="episode-img">
+                </div>
+            </section>
+            <section class="cell small-12 large-7">
+                <div class="episode-text">
+                    <h1 class="black-text">The Fifth Race</h1>
+                    <h3 class="yellow-text">Plot:</h3>
+                    <p class="white-text plot-body">
+                        During a exploration mission to make contact
+                        with an ally of the Asgard, Jack O’Neill becomes
+                        incapacitated. Over the next few days Jack starts
+                        to speak an unkown language and demonstrate
+                        understanding of the stargates technology.
+
+                        But the more he learns and changes, the more his
+                        brain begins to fail under the stress of all the
+                        new knowledge.
+                    </p>
+                    <section class="details-sect">
+                        <h3 class="yellow-text">Episode Details:</h3>
+                        <table id="episodeTable">
+                            <tr>
+                                <td>
+                                    <p class="white-text">
+                                        Season: <span class="yellow-text season-number">2</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="white-text">
+                                        Episode: <span class="yellow-text episode-number">15</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="white-text">Next Episode: <a href="" class="next-episode">A Matter of Time</a></p>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="white-text">Previous: <a href="" class="previous-episode">Touchstone</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="white-text">Air Date: <span class="yellow-text air-date">January 22, 1999</span></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <section class="cell small-12 large-10 large-offset-1">
+            <h2 class="yellow-text sub-header">Main Cast</h2>
+            <div class="main-cast normal-slider">
+                
+            </div>
+        </section>
+        <img src="./assets/imgs/dividercompFinal.png" alt="" aria-hidden="true" class="divider">
+        <section class="cell small-12 large-10 large-offset-1">
+            <h2 class="yellow-text sub-header">Guest Cast</h2>
+            <div class="guest-cast normal-slider">
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- Start of Movie Page -->
+    <main id="moviePage" class="grid-x">
+        <div class="cell small-12 large-10 large-offset-1 grid-x grid-margin-x grid-margin-y mb">
+            <section class="cell small-12 large-5">
+                <div class="teaser-img">
+                    <img src="./assets/imgs/moviePictures/stargate-1994-poster-edit.jpg" alt="" class="movie-img">
+                </div>
+            </section>
+            <section class="cell small-10 small-offset-1 large-7 large-offset-0">
+                <div class="episode-text">
+                    <h1 class="black-text">Stargate (1994)</h1>
+                    <h3 class="yellow-text">Plot:</h3>
+                    <p class="white-text plot-body">
+                        During a exploration mission to make contact
+                        with an ally of the Asgard, Jack O’Neill becomes
+                        incapacitated. Over the next few days Jack starts
+                        to speak an unkown language and demonstrate
+                        understanding of the stargates technology.
+
+                        But the more he learns and changes, the more his
+                        brain begins to fail under the stress of all the
+                        new knowledge.
+                    </p>
+                    <section class="details-sect">
+                        <h3 class="yellow-text">Episode Details:</h3>
+                        <table id="movieTable">
+                            <tr>
+                                <td>
+                                    <p class="white-text">
+                                        Release Date: <span class="yellow-text air-date">January 22, 1999</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="white-text">
+                                        Runtime: <span class="yellow-text run-time">1 Hour 30 Minutes</span>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <section class="cell small-12 large-10 large-offset-1">
+            <h2 class="yellow-text sub-header">Main Cast</h2>
+            <div class="main-cast normal-slider">
+            </div>
+        </section>
+        <img src="./assets/imgs/dividercompFinal.png" alt="" aria-hidden="true" class="divider">
+        <section class="cell small-12 large-10 large-offset-1">
+            <h2 class="yellow-text sub-header">Other Movies:</h2>
+            <div class="other-movies small-movie-slider">
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Start of Character Page -->
+    <main id="characterPage" class="grid-x">
+        <div class="cell small-12 large-10 large-offset-1 grid-x grid-margin-x grid-margin-y mb">
+            <section class="cell small-12 large-5">
+                <div class="teaser-img">
+                    <img src="./assets/imgs/castPictures/jackOneill.JPG" alt="" class="character-img">
+                </div>
+            </section>
+            <section class="cell small-10 small-offset-1 large-7 large-offset-0">
+                <div class="cast-text">
+                    <h1 class="black-text">Jonathan "Jack". O'Neill</h1>
+                    <h3 class="yellow-text">Background:</h3>
+                    <p class="white-text plot-body">
+                        Jonathan J. O'Neill, also known as John or, most commonly, Jack, is a Lieutenant General, in the United States Air Force, who served seven years in the Stargate Program, formerly as a Colonel and also as the leader of Stargate Command's main team, SG-1.
+                    </p>
+                    <section class="details-sect">
+                        <h3 class="yellow-text">Character Details:</h3>
+                        <table id="movieTable">
+                            <tr>
+                                <td>
+                                    <p class="white-text">
+                                        Number of Apperances: <span class="yellow-text apperance-count"></span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="white-text">
+                                        First Apperance: <a class="yellow-text first-apperance">Some Episode</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <section class="cell small-12 large-10 large-offset-1">
+            <h2 class="yellow-text episode-header">Episodes</h2>
+            <div class="episodes normal-slider">
+            </div>
+        </section>
+        <img src="./assets/imgs/dividercompFinal.png" alt="" aria-hidden="true" class="divider">
+        <section class="cell small-12 large-10 large-offset-1">
+            <h2 class="yellow-text movie-header">Movies:</h2>
+            <div class="movies small-movie-slider">
+
+            </div>
+        </section>
+    </main>
+    
+    <dialog id="citationModal" class="hidden">
+        <h2 class="yellow-text text-center">Project Asset Citations</h2>
+        <p class="white-text">
+            Images, videos, actor bio's, actor images, and episode descriptions were collected from IMDB, Stargate Episodes, and the stargate.fandom.com website.
+            All rights belong to MGM for stargate and these assets were used soley for educational purposes.
+
+            Html, CSS, and JS were designed and written by John Keenan.
+        </p>
+        <button class="read-more toggle-citation">Close Citation Reference</button>
+    </dialog>
+
+    <footer>
+            <div id="contactMenu">
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><button class="yellow-text toggle-citation" id="citationButton">Citations</button></li>
+                </ul>
+            </div>
+            <div id="copyright">
+                <p>Created By John Keenan</p>
+                <p>&copy; <span id="crYear">XXXX</span> All Rights Reserved</p>
+            </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+.movie, .person {
+    cursor: pointer;
+}
+
+.callout {
+    border: black 1px solid;
+    background-color: pink;
+}
+
+.callout > :last-child {
+    background-color: green;
+}
+
+.gray-1 {
+    background-color: gray; 
+}
+.pink {
+    background-color: pink;
+}
+
+.paleblue {
+    background-color: paleturquoise;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.header_background {
+	background-color: red;
+}
+
+
+.hideAll {
+    display: none;
+}
+
+.splash {
+    display: block;
+}
+
+@media print, screen and (max-width: 40em) {
+    /* mobile */
+    .blue {
+        background-color: lightblue;
+    } 
+}

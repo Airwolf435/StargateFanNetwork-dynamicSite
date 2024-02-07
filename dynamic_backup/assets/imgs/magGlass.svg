@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.53 136.42">
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <circle cx="83.05" cy="39.48" r="37.98" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+      <path d="m24.62,59.55h15.31v78.33c0,2.75-2.24,4.99-4.99,4.99h-5.28c-2.78,0-5.04-2.26-5.04-5.04V59.55h0Z" transform="translate(75.2 4.04) rotate(41.52)" fill="#212020" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+      <ellipse cx="83.99" cy="17.31" rx="15.86" ry="9.03" fill="#212121" opacity=".63" stroke="#212121" stroke-miterlimit="10" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

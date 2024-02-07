@@ -1,0 +1,584 @@
+/* Start of Resets and global variables*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@font-face {
+    font-family: unispace;
+    src: url(../assets/fonts/unispace\ rg.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    border: 0;
+    scroll-behavior: smooth;
+
+    --off-black: #231d1d;
+    --back-grey: #454549;
+    --off-white: #e5e0e0;
+    --white-text: #dbdce8;
+    --red-header: #bc302b;
+    --yellow-caution: #f2b630;
+    --inactive-border: #bb8e2e;
+    --active-border: #f2b630;
+    --sans-font: 'Ubuntu', 'Lucida Sans', 'Lucida Sans Unicode', sans-serif;
+    --script-font: unispace, serif;
+    --main-text-shadow: 0.30em 0.1em 0.25em black;
+}
+
+body{
+    position: relative;
+    background-image: url("../assets/imgs/website-bgcompFinal.png");
+    background-position: center;
+    /* margin-inline: 20px; */
+    margin-top: 15px;
+}
+
+img, video{
+    display: block;
+}
+
+h1,h2,h3{
+    font-family: var(--script-font);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-shadow: 0.30em 0.1em 0.25em black;
+}
+
+h3{
+    font-size: 1.5rem;
+    text-shadow: 0.30em 0.2em 0.5em black;
+}
+
+h4{
+    font-size: 1.25rem;
+}
+
+a{
+    color: var(--yellow-caution);
+}
+
+a:hover, .toggle-citation:hover{
+    outline: var(--yellow-caution) solid 2px;
+    color: var(--off-white);
+}
+
+table{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+    font-size: 1.15rem;
+}
+
+/* !Header style! */
+header{
+    margin-inline: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+#logo{
+    max-width: 287px;
+}
+/* Start of nav bar styling */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1.5em;
+    flex-wrap: wrap-reverse;
+    position: relative;
+
+}
+.search-bar{
+    --_text-color: var(--inactive-border);
+    display: flex;
+    border-radius: 0.5em;
+    border: 1px solid transparent;
+    flex-grow: 1;
+    max-width: calc(60ch + 40px);
+    padding: 0.15em 0.25em;
+    background-color: var(--back-grey);
+    font-family: var(--sans-font);
+    overflow: hidden;
+    transition: all 250ms linear;
+}
+
+#searchText{
+    flex-basis: 60ch;
+    flex-shrink: 1;
+    border: 0.15rem inset var(--off-black);
+    border-radius: 0.25em;
+    font-size: 1.25rem;
+    background: transparent;
+    color: var(--_text-color);
+    margin-block: auto;
+}
+
+#searchText::placeholder{
+    color: var(--_text-color);
+}
+
+#searchImg{
+    max-width: 24px;
+    margin: 0.5em;
+    opacity: 85%;
+}
+
+.search-error{
+    color: var(--red-header);
+    text-align: center;
+}
+
+.search-bar:has(:active, :hover, :focus){
+    --_text-color: var(--off-black);
+    background-color: var(--off-white);
+}
+
+#searchResults{
+    display: block;
+    position: absolute;
+    top: 4.2rem;
+    right: 3rem;
+    min-width: 60ch;
+    min-height: 1px;
+    height: auto;
+    background-color: #231d1d;
+    padding: 0.5em 0;
+    border-radius: 0  0 8px 8px;
+    transition: all 200ms ease-in-out;
+    opacity: 1;
+}
+
+/* Had to use this method of targeting an empty search results container because the :empty rule was not matching */
+#searchResults:not(:has(*)){
+    display: none;
+    opacity: 0;
+}
+
+.search-item{
+    background-color: #454549;
+    padding: 0.15em 1.4em;
+    border: 6px inset #2b2b2e;
+    color: var(--yellow-caution);
+    border-radius: 6px;
+    margin-bottom: 0.25em;
+}
+
+.search-item:hover,.search-item:focus{
+    background-color: #67676b;
+}
+
+.search-item a:hover,.search-item a:focus{
+    color: #dbdce8;
+}
+
+/* !Start of Footer Styling! */
+footer{
+    color: var(--white-text);
+    font-size: 1.25rem;
+    font-family: var(--sans-font);
+    margin-inline: 20px;
+    margin-block: 0.2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#copyright p{
+    margin: 0
+}
+
+#contactMenu{
+    margin-block: auto;
+}
+
+footer ul{
+    list-style-type: none;
+    margin-inline: 0;
+    margin-block: auto;
+}
+
+footer li{
+    margin-bottom: 0.5em;
+}
+
+footer li:last-of-type{
+    margin-bottom: 0;
+}
+
+/* !Start Of Reusable Element Styling */
+.card-carousel{
+    padding-block: 2.5em;
+}
+
+a:has(> .img-card){
+    display: flex !important;
+    justify-content: center;
+}
+
+a:hover:has(> .img-card){
+    outline: none
+}
+
+.grid-x{
+    container: grid / inline-size;
+}
+
+.img-card{
+    position: relative;
+    max-width: 360px;
+    border: 2px solid var(--inactive-border);
+    transition: all 1s;
+    overflow: hidden;
+    z-index: 0;
+    margin-inline: auto;
+    margin: 4em;
+}
+
+.img-card::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, transparent 0, black 80%);
+    z-index: 1;
+    opacity: .7;
+    transition: opacity 1s;
+}
+
+.img-card > img{
+    min-width: 180px;
+    width: 100%;
+    min-height: 240px;
+    height: 100%;
+}
+
+.img-card .text-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    text-align: start;
+    transition: opacity 1s;
+    padding-inline: 2ch;
+    color: var(--active-border);
+}
+
+.img-card .text-container > *{
+    font-size: max(2rem, 2.5cqi);
+}
+
+.img-card:hover, .img-card:focus{
+    scale: 1.15;
+    border: 2px solid var(--active-border);
+    &::after{
+        opacity: 0;
+    }
+}
+
+.img-card:hover .text-container, .img-card:focus .text-container{
+    opacity: 0;
+}
+
+.sub-header{
+    font-size: max(2rem, 5cqi);
+}
+
+.teaser-img{
+    max-width: 100%;
+    width: fit-content;
+    margin-inline: auto;
+    overflow: hidden;
+    border: 2px solid var(--active-border);
+}
+
+.yellow-text{
+    color: var(--yellow-caution);
+}
+
+.white-text{
+    color: var(--off-white);
+}
+
+.black-text{
+    color: var(--off-black);
+}
+
+td{
+    background-color: var(--back-grey);
+    border: 1px solid var(--inactive-border);
+}
+
+.divider{
+    width: 100%;
+    margin-block: 2em;
+}
+
+.divider:first-of-type{
+    margin-top: 0;
+}
+
+.mb{
+    margin-bottom: 1.5em;
+}
+
+.logo-image{
+    max-height: 8em;
+}
+
+.super-card{
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.super-card > .episode-img{
+    position: relative;
+    overflow: hidden;
+    clip-path: path("M0,320L55,0h485l-55,320H0z");
+    margin-block: auto;
+    z-index: 0;
+}
+
+.super-text{
+    background-color: var(--back-grey);
+    padding: 0.5em;
+    border: 2px solid var(--inactive-border);
+}
+
+.super-text > h3{
+    text-align: center;
+    color: var(--active-border);
+    text-shadow: var(--main-text-shadow);
+    font-size: 2rem;
+}
+
+.super-text > h4{
+    text-align: center;
+    color: var(--active-border);
+    text-shadow: var(--main-text-shadow);
+    font-size: 1.75rem;
+}
+
+.super-text > p{
+    max-width: 45ch;
+    color: var(--off-white);
+}
+
+.read-more{
+    display: block;
+    cursor: pointer;
+    max-width: fit-content;
+    padding-inline: 0.5em;
+    padding-block: 0.25em;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    color: var(--off-black);
+    background-color: var(--inactive-border);
+    margin-inline: auto;
+    margin-block: 0.25em;
+    transition: all 300ms ease-in;
+}
+
+.read-more:hover, .read-more:focus{
+    background-color: var(--active-border);
+    color: var(--off-white);
+}
+.read-more > *{
+    margin: auto;
+} 
+
+.slick-arrow::before{
+    color: var(--inactive-border);
+    text-shadow: var(--main-text-shadow);
+    font-size: 4rem;
+    transition: all 300ms ease-in;
+}
+
+.slick-arrow{
+    display: block;
+    width: fit-content;
+}
+.presentation *::before{
+    color: var(--inactive-border) !important;
+    font-size:3rem !important
+}
+
+.slick-dots *::before{
+    color: var(--active-border) !important;
+    font-size:1.5rem !important;
+    transition: all 300ms ease-in;
+}
+
+.slick-arrow::before:hover, .slick-arrow::before:focus{
+    color: var(--active-border);
+    
+}
+
+#citationModal{
+    display: block;
+    background-color: var(--back-grey);
+    border: 2px solid var(--active-border);
+    position: fixed;
+    inset: 35% 25%;
+    padding: 2em;
+    max-width: 50dvw;
+    min-width: fit-content;
+    z-index: 2;
+}
+
+.hidden{
+    display: none !important;
+    transition: all 150ms linear;
+}
+
+.toggle-citation{
+    cursor: pointer;
+}
+
+.plot-body{
+    margin-bottom: 0.5em
+}
+
+.normal-slider{
+    z-index: 0;
+}
+
+.slick-arrow{
+    z-index: 1;
+}
+
+.episode-text, .movie-text, .cast-text{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    background-color: var(--back-grey);
+    padding: 1.5em 2em;
+    border: 2px solid var(--active-border);
+}
+
+.episode-text h1, .movie-text h1, .cast-text h1{
+    color: var(--active-border);
+    text-shadow: var(--main-text-shadow);
+}
+/* ! Start of Main Section stylings ! */
+
+/* Stylings used for multiple mains */
+main{
+    position: relative;
+    margin-block: 1.5em;
+}
+
+
+
+#episodePage, #characterPage{
+    margin: 1.5em 0em;
+    padding-inline: 4em;
+    /* background-image: url(../assets/imgs/splash-bgcompFinal.png); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    padding-block: 1em;
+}
+
+
+/* Start of Styling for Splash Main */
+.body-sect{
+    box-sizing: border-box !important;
+    /* background-image: url(../assets/imgs/splash-bgcompFinal.png); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-inline: 20px;
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+}
+
+#videoBanner {
+    --_maskPercent: 5%;
+    position: relative;
+    box-shadow: 0.1em 0.5em 4em black;
+}
+
+#videoBanner > video{
+    width: 100%;
+    max-height: 24rem;
+    -webkit-mask-image: linear-gradient(to left, transparent 0%, black 0.5%, black 99.5%, transparent 100%);
+    mask-image: linear-gradient(to left, transparent 0%, black 0.5%, black 99.5%, transparent 100%);
+    border-radius: 0.25em;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+#splashLogo{
+    margin-block: 2em;
+    padding-inline: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    container: splash / inline-size;
+}
+
+#splashLogo h1{
+    color: var(--yellow-caution);
+    font-size: max(2rem, 8cqi);
+    text-shadow: 0.30em 0.1em 0.25em black;
+    text-align: center;
+}
+
+@media screen and (width <= 800px) {
+    /* h1{
+        font-size: 2.5rem;
+    } */
+
+    main{
+        margin-block: 0;
+    }
+
+    header{
+        margin-bottom: 1em;
+        position: relative;
+    }
+
+    .sub-header{
+        text-align: center;
+    }
+
+    .super-card > .episode-img{
+        clip-path: none;
+    }
+
+    #episodePage, #characterPage, .body-sect{
+        margin: 0;
+        padding-inline: 0;
+    }
+
+    .teaser-img{
+        margin-bottom: 1em;
+    }
+
+    #searchResults{
+        top: 2.75em;
+        min-width: 25ch;
+    }
+
+    #citationModal{
+        inset: 5% 0;
+        max-width: 100%;
+    }
+
+}
